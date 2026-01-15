@@ -10,9 +10,7 @@ function ProductCard({ product }) {
 
   return (
     <div className="bg-white rounded-md overflow-hidden hover:shadow-md transition-all duration-300 group">
-      {/* Image Container */}
       <div className="relative h-56 bg-gray-50 overflow-hidden">
-        {/* Badges */}
         {product.isNew && (
           <span className="absolute top-3 left-3 bg-green-500 text-white text-xs font-semibold px-3 py-1 rounded-full z-10">
             New
@@ -24,7 +22,6 @@ function ProductCard({ product }) {
           </span>
         )}
 
-        {/* Action Buttons */}
         <div className="absolute top-3 right-3 flex flex-col gap-2 opacity-0 group-hover:opacity-100 transition-opacity duration-300 z-10">
           <button 
             onClick={() => setIsWishlisted(!isWishlisted)}
