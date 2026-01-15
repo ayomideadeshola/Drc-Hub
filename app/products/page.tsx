@@ -255,25 +255,31 @@ export default function ProductsPage() {
 
   return (
     <div className="min-h-screen bg-gray-50">
-      <div className="bg-gradient-to-r from-red-600 to-red-800 text-white py-16 relative overflow-hidden">
-        <div className="absolute right-0 top-1/2 transform -translate-y-1/2">
-          <div className="relative">
-            <div className="absolute inset-0 bg-gradient-to-l from-red-600 via-red-600 to-transparent w-32 h-full"></div>
-            <img
-              src="/phone-image.png"
-              alt="Mobile Phone"
-              className="relative z-10 h-64 md:h-80 lg:h-96 w-auto opacity-90"
-            />
+      <div className="relative h-[70vh] bg-gradient-to-r from-red-700 via-red-600 to-red-800 text-white overflow-hidden">
+
+        <div className="absolute inset-0 bg-gradient-to-br from-red-900 to-red-700"></div>
+
+        <div className="absolute -top-32 -left-32 w-[500px] h-[500px] bg-red-500/30 rounded-full blur-3xl"></div>
+        <div className="absolute bottom-0 right-0 w-[400px] h-[400px] bg-white/10 rounded-full blur-3xl"></div>
+
+        <div className="container mx-auto h-full px-6 relative z-20 flex items-center">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-10 items-center w-full">
+
+            <div className="container mx-auto px-6 relative z-20"> <h1 className="text-4xl md:text-5xl font-bold mb-3">Our Collection</h1> <p className="text-lg md:text-xl opacity-90 max-w-2xl"> Discover premium mobile accessories for every need </p> </div>
+
+            <div className="hidden md:flex justify-end relative">
+              <div className="absolute -inset-6 bg-red-600/30 blur-3xl rounded-full"></div>
+              <img
+                src="/asset/two.png"
+                alt="Mobile Phone"
+                className="relative z-10 opacity-60 h-[350px] rounded-md lg:w-[400px] object-cover lg:h-[400px]"
+              />
+            </div>
+
           </div>
         </div>
-
-        <div className="container mx-auto px-6 relative z-20">
-          <h1 className="text-4xl md:text-5xl font-bold mb-3">Our Collection</h1>
-          <p className="text-lg md:text-xl opacity-90 max-w-2xl">
-            Discover premium mobile accessories for every need
-          </p>
-        </div>
       </div>
+
 
       <div className="container mx-auto px-6 py-8">
         <div className="flex flex-col lg:flex-row gap-6">

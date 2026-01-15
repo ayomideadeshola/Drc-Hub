@@ -1,4 +1,4 @@
-import { 
+import {
   MapPin,
   Phone,
   Mail,
@@ -8,24 +8,23 @@ import {
   Youtube,
   Send
 } from 'lucide-react'
+import Image from 'next/image'
 
 export default function Footer() {
   return (
     <footer className="bg-black text-white">
-      {/* Main Footer */}
       <div className="container mx-auto px-6 py-16">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12">
-          {/* Company Info */}
           <div>
-            <div className="flex items-center space-x-2 mb-6">
-              <div className="w-10 h-10 bg-red-600 rounded-lg flex items-center justify-center">
-                <span className="text-white font-bold text-xl">E</span>
-              </div>
-              <div className="text-xl font-bold">
-                <span className="text-white">ELEGANT</span>
-                <span className="text-red-600">HOME</span>
-              </div>
-            </div>
+            <a href="/" className="flex items-center space-x-2 group">
+              <Image
+                src="/asset/new-logo.png"
+                alt="DrCHub Logo" 
+                width={200}
+                height={100}
+                priority
+              />
+            </a>
             <p className="text-gray-400 mb-6 leading-relaxed">
               Premium home furnishings for modern living.
             </p>
@@ -45,7 +44,6 @@ export default function Footer() {
             </div>
           </div>
 
-          {/* Quick Links */}
           <div>
             <h3 className="text-lg font-bold mb-6 text-white">Shop</h3>
             <ul className="space-y-3">
@@ -60,7 +58,6 @@ export default function Footer() {
             </ul>
           </div>
 
-          {/* Customer Service */}
           <div>
             <h3 className="text-lg font-bold mb-6 text-white">Help</h3>
             <ul className="space-y-3">
@@ -75,7 +72,6 @@ export default function Footer() {
             </ul>
           </div>
 
-          {/* Newsletter */}
           <div>
             <h3 className="text-lg font-bold mb-6 text-white">Newsletter</h3>
             <p className="text-gray-400 mb-4">Get exclusive offers and updates</p>

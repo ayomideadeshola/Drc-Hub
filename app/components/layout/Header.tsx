@@ -114,10 +114,10 @@ export default function Header() {
 
               <a href="/" className="flex items-center space-x-2 group">
                 <Image
-                  src="/asset/logo-removebg.png"
+                  src="/asset/new-logo.png"
                   alt="DrCHub Logo"
-                  width={160}
-                  height={60}
+                  width={180}
+                  height={80}
                   priority
                 />
               </a>
