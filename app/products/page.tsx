@@ -255,11 +255,21 @@ export default function ProductsPage() {
 
   return (
     <div className="min-h-screen bg-gray-50">
-      {/* Hero */}
-      <div className="bg-gradient-to-r from-red-600 to-red-800 text-white py-16">
-        <div className="container mx-auto px-6">
+      <div className="bg-gradient-to-r from-red-600 to-red-800 text-white py-16 relative overflow-hidden">
+        <div className="absolute right-0 top-1/2 transform -translate-y-1/2">
+          <div className="relative">
+            <div className="absolute inset-0 bg-gradient-to-l from-red-600 via-red-600 to-transparent w-32 h-full"></div>
+            <img
+              src="/phone-image.png"
+              alt="Mobile Phone"
+              className="relative z-10 h-64 md:h-80 lg:h-96 w-auto opacity-90"
+            />
+          </div>
+        </div>
+
+        <div className="container mx-auto px-6 relative z-20">
           <h1 className="text-4xl md:text-5xl font-bold mb-3">Our Collection</h1>
-          <p className="text-lg md:text-xl opacity-90">
+          <p className="text-lg md:text-xl opacity-90 max-w-2xl">
             Discover premium mobile accessories for every need
           </p>
         </div>
@@ -267,7 +277,6 @@ export default function ProductsPage() {
 
       <div className="container mx-auto px-6 py-8">
         <div className="flex flex-col lg:flex-row gap-6">
-          {/* Sidebar Filters - Desktop */}
           <div className="hidden lg:block lg:w-64 flex-shrink-0">
             <div className="bg-white rounded-xl shadow-md p-6 sticky top-6">
               <h3 className="text-lg font-semibold mb-4 flex items-center">
